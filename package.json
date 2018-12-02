@@ -1,0 +1,27 @@
+{
+  "name": "markdown-editor-static",
+  "version": "1.0.0",
+  "description": "Static mocks and prototypes of the markdown-editor React app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass src/main.scss ./main.css -w src",
+    "bs": "browser-sync start -s --ss ./ --watch index.html,main.scss --no-notify --no-open --no-ghost-mode",
+    "start": "npm run sass | npm run bs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnfoderaro/markdown-editor-static.git"
+  },
+  "author": "John Foderaro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnfoderaro/markdown-editor-static/issues"
+  },
+  "homepage": "https://github.com/johnfoderaro/markdown-editor-static#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "node-sass": "^4.10.0",
+    "nodemon": "^1.18.7"
+  }
+}
