@@ -1,2 +1,205 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  height: 100%; }
+
 body {
-  background: #fff; }
+  height: 100%;
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',  'Segoe UI Emoji', 'Segoe UI Symbol'; }
+
+.container {
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: row; }
+
+.panel {
+  display: flex;
+  flex-direction: column; }
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+
+.loader svg {
+  margin-left: auto;
+  margin-right: auto;
+  transform: rotate(-90deg);
+  stroke: #fff; }
+
+.loader circle {
+  stroke-dasharray: 260;
+  stroke-dashoffset: 260;
+  animation: dash 1.5s infinite; }
+
+@keyframes dash {
+  50% {
+    stroke-dashoffset: 0; }
+  100% {
+    stroke-dashoffset: -260; } }
+
+.message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+
+.message svg {
+  margin-left: auto;
+  margin-right: auto; }
+
+.message span {
+  color: #fff; }
+
+.message span {
+  font-size: 1.5em; }
+
+.explorer {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  height: 100%;
+  width: 20%;
+  justify-content: space-between;
+  background: #eee; }
+
+.explorer .list {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  border: none; }
+
+.explorer ul {
+  margin-left: .5rem;
+  list-style: none; }
+
+.explorer .node {
+  display: flex;
+  flex-direction: row; }
+
+.explorer .node .icon {
+  padding: .25rem;
+  align-self: center; }
+
+.explorer .node .name {
+  padding: .25rem; }
+
+.explorer .node .link-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  text-decoration: underline;
+  display: inline;
+  margin: 0;
+  padding: 0; }
+  .explorer .node .link-button:hover, .explorer .node .link-button:focus {
+    text-decoration: none; }
+
+.explorer .action {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end; }
+
+.explorer .action-button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 3rem;
+  width: 6rem;
+  background: none;
+  border: none;
+  border-radius: .5rem;
+  font-size: 1.25em;
+  cursor: pointer; }
+
+.explorer .action-button.new {
+  margin-right: .5rem;
+  border: 2px solid #1969b3; }
+  .explorer .action-button.new:hover {
+    border: none;
+    background: #1969b3;
+    color: white; }
+
+.editor {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  height: 100%;
+  width: 80%;
+  justify-content: space-between; }
+
+.editor .name {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+  border: none; }
+
+.editor .content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: .25rem;
+  border: none;
+  overflow: auto;
+  outline: none;
+  box-shadow: none;
+  resize: none;
+  font-family: 'Monaco', monospace, sans-serif; }
+
+.editor .action {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+.editor .action-button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 3rem;
+  width: 6rem;
+  background: none;
+  border: none;
+  border-radius: .5rem;
+  font-size: 1.25em;
+  cursor: pointer; }
+
+.editor .action-button.save {
+  margin-right: .5rem;
+  border: 2px solid #19b33f; }
+  .editor .action-button.save:hover {
+    border: none;
+    background: #19b33f;
+    color: white; }
+
+.editor .action-button.delete {
+  margin-left: .5rem;
+  border: 2px solid #b33819; }
+  .editor .action-button.delete:hover {
+    border: none;
+    background: #b33819;
+    color: white; }

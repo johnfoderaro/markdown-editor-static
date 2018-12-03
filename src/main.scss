@@ -1,3 +1,4 @@
-body {
-  background: #fff;
-}
+@import 'base.scss';
+@import 'container.scss';
+@import 'explorer.scss';
+@import 'editor.scss';

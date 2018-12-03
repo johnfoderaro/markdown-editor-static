@@ -47,8 +47,8 @@
       </div>
     </div>
     <form class="panel editor">
-      <input class="name" value="untitled.md"></input>
-      <textarea id="text" class="content" placeholder="&quot;The first draft is just you telling yourself the story.&quot;"></textarea>
+      <input class="name" value="hello-world.md"></input>
+      <textarea id="text" class="content" placeholder="edit your post"></textarea>
       <div class="action">
         <button class="action-button save">Save</button>
         <button class="action-button delete">Delete</button>
@@ -57,3 +57,27 @@
   </div>
 </body>
 </html>
+
+<script>
+  (() => {
+    const text = document.getElementById('text');
+    text.value =
+`---
+name: Hello World!
+date: 12/02/18
+tags: [hello, world, blog]
+---
+
+# Hello World!
+
+Mlkshk vice echo park snackwave gluten-free thundercats lyft austin slow-carb crucifix subway tile iPhone forage. Glossier letterpress af blue bottle enamel pin bespoke fingerstache taiyaki humblebrag distillery vape raclette raw denim yr. Tbh next level pop-up 8-bit cloud bread hella post-ironic, typewriter yuccie synth. Tbh austin butcher, tumblr seitan bespoke roof party small batch aesthetic put a bird on it shaman. Williamsburg helvetica tacos try-hard cloud bread copper mug lomo 3 wolf moon sriracha pinterest before they sold out flexitarian gentrify kombucha fashion axe. Cred typewriter lomo, bespoke marfa yuccie kogi selvage.
+
+Put a bird on it jianbing taiyaki jean shorts, normcore gentrify poutine. Succulents polaroid kale chips disrupt, portland biodiesel normcore you probably haven't heard of them street art. Drinking vinegar semiotics shabby chic gastropub, portland hell of marfa migas copper mug master cleanse post-ironic ennui gentrify tofu palo santo. Dreamcatcher skateboard normcore, VHS offal tumeric letterpress meggings. Glossier schlitz raclette tilde mixtape shabby chic farm-to-table gastropub fingerstache lyft. Echo park salvia chia raclette, health goth chartreuse authentic actually keffiyeh pug. Heirloom slow-carb shabby chic lo-fi cornhole 90's knausgaard pop-up roof party trust fund salvia enamel pin XOXO distillery.
+
+Deep v quinoa viral, jean shorts mumblecore fanny pack fixie blog selvage health goth man bun sustainable retro tumblr etsy. Chia tumeric vexillologist raclette brooklyn portland fashion axe heirloom irony. Disrupt tbh asymmetrical williamsburg, humblebrag adaptogen church-key hexagon. Wolf viral kinfolk brooklyn.
+
+Chillwave bitters meditation, heirloom selvage thundercats taiyaki man bun skateboard. Jianbing artisan adaptogen, mixtape YOLO blue bottle woke health goth butcher meh raw denim raclette. Fam single-origin coffee cornhole lo-fi, you probably haven't heard of them kinfolk asymmetrical microdosing 90's snackwave typewriter four loko austin stumptown iPhone. Vice cray you probably haven't heard of them, activated charcoal mixtape intelligentsia slow-carb.
+
+Hexagon cloud bread yr tacos vaporware PBR&B meditation. Roof party snackwave fingerstache, everyday carry portland banh mi actually hammock. Cray fingerstache franzen pitchfork banh mi chicharrones bitters tacos distillery polaroid. Marfa mustache meggings ennui vaporware beard tote bag whatever hoodie shoreditch enamel pin 90's. Vegan food truck listicle art party keytar. Asymmetrical vice intelligentsia, pitchfork four loko pug woke retro sriracha umami marfa master cleanse selvage knausgaard. Gentrify chillwave kinfolk, man braid hexagon tofu gochujang hammock quinoa green juice crucifix.`;
+  })();
+</script>

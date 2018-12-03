@@ -1,0 +1,79 @@
+.explorer {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  height: 100%;
+  width: 20%;
+  justify-content: space-between;
+  background: #eee;
+}
+
+.explorer .list {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.explorer ul {
+  margin-left: .5rem;
+  list-style: none;
+}
+
+.explorer .node {
+  display: flex;
+  flex-direction: row;
+}
+
+.explorer .node .icon {
+  padding: .25rem;
+  align-self: center;
+}
+
+.explorer .node .name {
+  padding: .25rem;
+}
+
+.explorer .node .link-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  text-decoration: underline;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.explorer .action {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+}
+.explorer .action-button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 3rem;
+  width: 6rem;
+  background: none;
+  border: none;
+  border-radius: .5rem;
+  font-size: 1.25em;
+  cursor: pointer;
+}
+
+.explorer .action-button.new {
+  margin-right: .5rem;
+  border: 2px solid rgb(25, 105, 179);
+  &:hover {
+    border: none;
+    background: rgb(25, 105, 179);
+    color: rgb(255, 255, 255);
+  }
+}

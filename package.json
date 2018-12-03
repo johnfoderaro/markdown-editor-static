@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass src/main.scss ./main.css -w src",
-    "bs": "browser-sync start -s --ss ./ --watch index.html,main.scss --no-notify --no-open --no-ghost-mode",
+    "sass": "node-sass src/main.scss ./main.css -r --watch ./src",
+    "bs": "browser-sync start -s --ss ./ --watch index.html,main.scss --no-notify --no-open --no-ghost-mode --reload-delay 500",
     "start": "npm run sass | npm run bs"
   },
   "repository": {
